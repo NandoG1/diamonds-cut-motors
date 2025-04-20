@@ -101,7 +101,7 @@ function checkmediax(){
         `
         document.getElementById("DCM").classList.add("flex-header", "flex-header-ls")
         document.getElementById("mid-navigation-top").innerHTML = `
-            <a href="(Start)HomePage.html" class="big-navigation">HOME</a>
+            <a href="index.html" class="big-navigation">HOME</a>
         `
         document.getElementById("mid-navigation-bottom").innerHTML = `
             <p class="small-navigation">LUXURY CAR HERE AND <span>TODAY ONLY</span></p>
@@ -129,7 +129,7 @@ function checkmediax(){
         <p>MOTORS</p>
         `
         document.getElementById("mid-navigation-top").innerHTML = `
-         <a href="(Start)HomePage.html">HOME</a>
+         <a href="index.html">HOME</a>
          <a href="CarsPage.html">CARS</a>
          <a href="ShowRoom.html">SHOW ROOM</a>
          <a href="AboutUs.html">ABOUT US</a>
@@ -163,7 +163,7 @@ function checkmediay(){
                             <p class="footer-no-margin-js">EXPLORE</p>
                             <img src="../Asset/Footer/chevron-down-regular-24.png" alt="" class="footer-img-explore" id="footer-img-explore">
                         </div>
-                        <p class="footer-explore-1 footer-explore-1-js" id="footer-list"><a href="(Start)HomePage.html">Home</a></p>
+                        <p class="footer-explore-1 footer-explore-1-js" id="footer-list"><a href="index.html">Home</a></p>
                         <p class="footer-explore-1 footer-explore-1-js" id="footer-list-2"><a href="CarsPage.html">Cars</a></p>
                         <p class="footer-explore-1 footer-explore-1-js" id="footer-list-3"><a href="ShowRoom.html">Show Room</a></p>
                         <p class="footer-explore-1 footer-explore-1-js footer-special-js" id="footer-list-4"><a href="AboutUs.html">About Us</a></p>
@@ -288,7 +288,7 @@ function checkmediay(){
                 <div class="footer-top-left">
                     <div class="footer-explore">
                         <p>Explore</p>
-                        <p class="footer-explore-1"><a href="(Start)HomePage.html">Home</a></p>
+                        <p class="footer-explore-1"><a href="index.html">Home</a></p>
                         <p class="footer-explore-1"><a href="CarsPage.html">Cars</a></p>
                         <p class="footer-explore-1"><a href="ShowRoom.html">Show Room</a></p>
                         <p class="footer-explore-1"><a href="AboutUs.html">About Us</a></p>
