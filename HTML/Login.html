@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="../Style/Login.css">
+    <link rel="icon" href="../Asset/Header/car-solid-24.png">
+</head>
+<body id="body">
+
+    <!-- Header -->
+
+    <header class="header" id="header">
+        <div class="header-left" id="header-left-id">
+            <div class="navigation-menu" id="navigation-menu">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+            <img src="../Asset/Header/car-logo.png" alt="">
+        </div> 
+        <div class="header-mid" id="DCM">
+            <p>DIAMONDS</p>
+            <p>CUT</p>
+            <p>MOTORS</p>
+        </div>
+        <div class="header-right">
+            <div class="header-search-box" id="header-search-box">
+                <img src="../Asset/Header/search-regular-24.png" alt="" width="21px" class="search-header" id="search-header">
+                <input type="text" class="input-header" placeholder="Find Car" id="input-header" autocomplete="off">
+                <img src="../Asset/Header/x-regular-24.png" alt="" class="x-header" id="x-header">
+            </div>
+            <div class="header-absolute-1" id="header-absolute-1">Find Car!</div>
+            <div class="header-right-search" id="header-right-search">
+                <img src="../Asset/Header/search-regular-24.png" alt="">
+                <p>FIND</p>
+            </div>
+            <div class="header-absolute-2" id="header-absolute-2">Login Now!</div>
+            <div class="header-right-login" id="header-right-login">
+                <a href="Login.html"><img src="../Asset/Header/user-regular-24 (5).png" alt=""></a>
+                <a href="Login.html"><p>LOGIN</p></a>
+            </div>
+        </div>
+
+        <div class="sidebar" id="sidebar">
+            <div class="sidebar-top">
+                <img src="../Asset/Header/car-logo.png" alt="">
+            </div>
+            <div class="sidebar-mid">
+                <div>
+                    <img src="../Asset/Header/home-solid-24.png" alt="">
+                    <a href="(Start)HomePage.html"><p>HOME</p></a>
+                </div>
+                <div>
+                    <img src="../Asset/Header/car-solid-24 (1).png" alt="">
+                    <a href="CarsPage.html"><p>CARS</p></a>
+                </div>
+                <div>
+                    <img src="../Asset/Header/building-house-solid-24 (1).png" alt="">
+                    <a href="ShowRoom.html"><p>SHOW ROOM</p></a>
+                </div>
+                <div>
+                    <img src="../Asset/Header/question-mark-regular-24.png" alt="">
+                    <a href="AboutUs.html"><p>ABOUT US</p></a>
+                </div>
+            </div>
+            <div class="sidebar-line"></div>
+            <div class="sidebar-bottom">
+                <img src="../Asset/Header/user-regular-24 (5).png" alt="">
+                <a href="Login.html"><p>LOGIN</p></a>
+            </div>
+        </div>
+    </header>
+
+
+    <!-- Navigation -->
+
+    <div class="nav" id="nav">
+        <nav class="navigation" id="nav1">
+            <div class="mid-navigation-top" id="mid-navigation-top">
+                <a href="(Start)HomePage.html">HOME</a>
+                <a href="CarsPage.html">CARS</a>
+                <a href="ShowRoom.html">SHOW ROOM</a>
+                <a href="AboutUs.html">ABOUT US</a>
+            </div>
+        </nav>
+    </div>
+    <div class="footer-junk"></div>
+    <div class="mid-navigation-bottom" id="mid-navigation-bottom">
+       <p>ALL OF POPULAR LUXURY CAR NOW SELL IN HERE AND <span>ONLY FOR TODAY</span></p>
+    </div>
+
+    <!-- Main Content -->
+     
+    <div class="popup-main box" id="pop-pop">
+        <div class="popup-card-main">
+            <div class="popup-main-top">
+                <img src="../Asset/Header/x-regular-24.png" alt="" class="silang" id="hm" onclick="exit()">
+                <div class="popup-img">
+                    <img src="../Asset/Header/car-logo.png" alt="">
+                    <p>WHEELS</p>
+                </div>
+                <p class="popup-login">Login to your account</p>
+                <p class="popup-enter">Enter your username and password</p>
+            </div>
+            <div class="popup-main-input">
+                <form action="After2.html" method="get">
+                    <div class="popup-flex">
+                        <label for="us">Username</label>
+                        <input type="text" id="us" placeholder="Username" autocomplete="off" onkeyup="validate1()">
+                        <div class="popup-wrong" id="popup-wrong-1"></div>
+                    </div>
+                    <div class="popup-flex">
+                        <label for="pw">Password</label>
+                        <input type="password" id="pw" placeholder="Password" autocomplete="off" onkeyup="validate2()">
+                        <div class="popup-wrong" id="popup-wrong-2"></div>
+                    </div>
+                </form>
+                
+            </div>
+            <div class="popup-main-button">
+                <button onclick="validatepop()">Login in</button>
+            </div>
+            <p class="popup-cr">©2024-2025 DIAMONDSCUT MOTORS. All Right Reversed</p>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <main class="main-main">
+            <section class="main-content-out">
+                <div class="main-content-left">
+                    <img src="../Asset/Login Page/pexels-kelvin809-1519192.jpg" alt="" width="510px" id="main-content-img">
+                </div>
+                <div class="main-content-right">
+                    <div class="main-content-header">
+                        <img src="../Asset/Header/car-logo.png" alt="" width="192px">
+                        <p class="main-content-header-signup">Sign in to your account</p>
+                        <p class="main-content-header-detail">Enter your details to proceed further</p>
+                    </div>
+                    
+                    <div class="main-content-form-outside">
+                        <form action="After.html" name="form" onsubmit="return validate()" method="get">
+                            <div class="main-content-form">
+                                <label for="name">Username</label>
+                                <input type="text" name="name-user" id="name" placeholder="Username" autocomplete="off" onkeyup="validateuser()" autofocus>
+                                <div class="wrong-input" id="wrong-input-1"></div>
+                            </div>
+                            <div class="main-content-form">
+                                <label for="email">Email</label>
+                                <input type="text" name="" id="email" placeholder="Email" onkeyup="validateemail()" autocomplete="off">
+                                <div class="wrong-input" id="wrong-input-2"></div>
+                            </div>
+                            <div class="main-content-form">
+                                <label for="phone">Phone Number</label>
+                                <input type="text" name="" id="phone" placeholder="Phone Number" autocomplete="off" onkeyup="validatephone()">
+                                <div class="wrong-input" id="wrong-input-3"></div>
+                            </div>
+                            <div class="main-content-form-password">
+                                <div class="main-content-form-password-input">
+                                    <label for="password">Password</label>
+                                    <input type="password" name="" id="password" placeholder="Password" autocomplete="off" onkeyup="validatepass(); validateconfirm()">
+                                    <div class="wrong-input" id="wrong-input-4"></div>
+                                </div>
+                                <div class="main-content-form-password-input">
+                                    <label for="confirm">Confirm Password</label>
+                                    <input type="password" name="" id="confirm" placeholder="Confirm Password" autocomplete="off" onkeyup="validateconfirm()">
+                                    <div class="wrong-input" id="wrong-input-5"></div>
+                                </div>
+                            </div>
+                            <div class="wrong-input" id="wrong-input-6">Password not match</div>
+                        </form>
+
+                        <div class="main-content-bottom">
+                            <div class="main-content-bottom-remember">
+                                <input type="checkbox" name="" id="check-remember">
+                                <p>Remember me</p>
+                            </div>
+                            <div class="main-content-login">
+                                <p>Have Account? <span onclick="popupnew();">Login</span></p>
+                            </div>
+                        </div>
+                        <div class="main-content-bottom-1">
+                            <input type="checkbox" name="" id="check-read">
+                            <p>I have read the <span>Diamond Cut Motors</span> rules and agree to the <span>Term & Service</span></p>
+                        </div>
+
+                        <div class="main-content-button">
+                            <button onclick="validate();">Sign In</button>
+                        </div>
+
+                        <div class="main-content-2024cr">
+                            <p>©2024-2025 DIAMONDSCUT MOTORS. All Right Reversed</p>
+                        </div>
+                    
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <!-- Footer -->
+
+    <footer class="footer" id="footer">
+        <div class="footer-container">
+            <div class="footer-top footer-adjust-1">
+                <div class="footer-top-left">
+                    <div class="footer-explore">
+                        <p>Explore</p>
+                        <p class="footer-explore-1"><a href="(Start)HomePage.html">Home</a></p>
+                        <p class="footer-explore-1"><a href="CarsPage.html">Cars</a></p>
+                        <p class="footer-explore-1"><a href="ShowRoom.html">Show Room</a></p>
+                        <p class="footer-explore-1"><a href="AboutUs.html">About Us</a></p>
+                    </div>
+                    <div class="footer-contact">
+                        <div>
+                            <p class="footer-p">Contact</p>
+                        </div>
+                        <div class="footer-contact-icon">
+                            <a href="https://www.instagram.com/" target="_blank"><img src="../Asset/Footer/igg.png" alt="" width="25px"></a>
+                            <a href="https://mail.google.com/" target="_blank"><img src="../Asset/Footer/email.webp" alt="" width="25px"></a>
+                            <a href="https://www.facebook.com/" target="_blank"><img src="../Asset/Footer/facebook.png" alt="" width="25px"></a>
+                            <a href="https://x.com/" target="_blank"><img src="../Asset/Footer/new-tiwterrrr.png" alt="" width="25px"></a>
+                            <a href="https://www.tiktok.com/" target="_blank"><img src="../Asset/Footer/no-bg-tiktok.png" alt="" width="25px"></a>
+                        </div>
+                        <div class="footer-phone">
+                            <img src="../Asset/Footer/newe-phnefwe.png" alt="" width="25px">
+                            <p>+ 1 234 567 890</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-top-right">
+                    <img src="../Asset/Header/car-logo.png" alt="">
+                    <p class="footer-des">DiamondCut Motors is a prestigious car reseller that provides luxurious vehicles throughout Indonesia.</p>
+                    <p class="footer-top-right-absolute">WHEELS</p>
+                </div>
+            </div>
+            <div class="footer-bottom footer-adjust">
+                <div class="footer-bottom-left">
+                    <div>Website Terms</div>
+                    <div>Privacy Policy</div>
+                    <div>Term of Use</div>
+                </div>
+                <div class="footer-cr" id="hei">
+                    © 2024-2025 DIAMONDSCUT MOTORS
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="../Script/Login.js"></script>
+</body>
+</html>
